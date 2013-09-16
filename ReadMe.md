@@ -9,14 +9,14 @@ Niedersächsische Staats- und Universitätsbibliothek.
 
 ## Package Contents
 
-`SUB-Icon-Font/`
+**`SUB-Icon-Font/`**
 
 A folder containing the actual icon font:
 
 - **eot**, **woff**, **svg**, **ttf** standard file formats
 - **Demo** showing an example display of the font on a web page
 
-`Icons_and_Guidelines.pdf`
+**`Icons_and_Guidelines.pdf`**
 
 An overview of the icons along with information about the governing rules for designing and using the icon font:
 
@@ -24,14 +24,14 @@ An overview of the icons along with information about the governing rules for de
 - **Design Principles**: rules in effect during original design (should be followed whenever the set is extended with new icons)
 - **Usage Guidelines**: notes about proper display
 
-`Character_Map.md`
+**`Character_Map.md`**
 
 - Assigned characters for each icon (Unicode)
 - CSS classes
 
-`License.txt`
+**`License.txt`**
 
-`ReadMe.md`
+**`ReadMe.md`**
 
 
 ## Usage
