@@ -4,53 +4,52 @@ Designed by Henrik Cederblad, [Cederblad Design](http://cederbladdesign.com).
 
 ## About
 
-This icon font contains UI symbols for various types of media and information sources. It was commissioned in 2013 by [SUB Göttingen](http://www.sub.uni-goettingen.de) | Georg-August-Universität
+This is an icon font that contains UI symbols for various types of media and information sources. It was commissioned in 2013 by [SUB Göttingen](http://www.sub.uni-goettingen.de) | Georg-August-Universität
 Niedersächsische Staats- und Universitätsbibliothek.
 
 ## Package Contents
 
-- ##### SUB Icon Font/
+`SUB-Icon-Font/`
 
-    A folder that contains the final product:
+A folder containing the actual icon font:
 
-    - Icon font in standard formats (**eot**, **woff**, **svg**, **ttf**)
-    - **Demo** example showing the icon font used on a web page
+- **eot**, **woff**, **svg**, **ttf** standard file formats
+- **Demo** showing an example display of the font on a web page
 
-- ##### Icons & Guidelines.pdf
+`Icons_and_Guidelines.pdf`
 
-    Documenting the process of creating and using the icon font:
+An overview of the icons along with information about the governing rules for designing and using the icon font:
 
-    - **Symbol sheet** showing the icons in overview
-    - **Design Principles** in effect during original design and useful should the set be extended with new icons
-    - Notes and guidelines for proper end-use
+- **Icons overview**: all icons shown together on a grid
+- **Design Principles**: rules in effect during original design (should be followed whenever the set is extended with new icons)
+- **Usage Guidelines**: notes about proper display
 
-- ##### Character-Map.md
+`Character_Map.md`
 
-    Reference for implementation:
+- Assigned characters for each icon (Unicode)
+- CSS classes
 
-    - Unicode values and CSS classes
+`License.txt`
 
-- ##### License.txt
-
-- ##### ReadMe.md
+`ReadMe.md`
 
 
 ## Usage
 
-There are multiple ways to implement icon fonts on a web page. You may take a look at the included demo inside **SUB Icon Font/** and examine the source code for an example that shows the icon font implemented on a web page. (However this example does not combine background/foreground layers, see *Layers* below.)
+There are multiple ways to implement icon fonts on a web page. You may take a look at the included demo – open **index.html** within **SUB Icon Font/** – and examine the source code for a few examples. (N.B. this example does not align and stack each icon's background/foreground symbols one on top of the other, see *Layers* below.)
 
 ### Character mapping
 
-The glyphs are mapped to the Private Use Area ([PUA](http://en.wikipedia.org/wiki/Private_Use_Area)) of Unicode. Using PUA for character mapping is considered best practice since these characters are most likely to be ignored by screen readers. See **Character-Map.md** to find out which code is assigned to which icon.
+The glyphs are mapped to Private Use Area ([PUA](http://en.wikipedia.org/wiki/Private_Use_Area)) characters of Unicode. See **Character_Map.md** for assigned codes.
 
 ### Layers
 
-This icon font is designed to use two graphic layers per symbol – a background layer and a foreground layer – which should be positioned, one on top of the other, with CSS. It doesn't matter which one is on top since their graphics do not overlap.
+SUB Icon Font is designed to use two layered symbols per icon: a background layer and a foreground layer. These should be positioned one on top of the other with CSS. It doesn't matter which one is on top since their graphics will not overlap.
 
 ### Colors
 
-The color/luminosity of background layers should always be darker than the foreground layers, otherwise the icons won't appear as designed.
+The color (luminosity) of background layers should always be darker than the foreground layers, otherwise the icons won't appear correctly.
 
 ## License
 
-Licensed under the MIT License.
+Licensed under the MIT License (see *License.txt*).
