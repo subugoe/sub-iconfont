@@ -2,7 +2,11 @@
 
 Designed by Henrik Cederblad, [Cederblad Design](http://cederbladdesign.com).
 
-![alt tag](https://raw.github.com/subugoe/sub-iconfont/tree/master/Workfiles/_misc/SUB_Icon_Font_Splash_v1.png)
+---
+
+![alt tag](https://raw.github.com/subugoe/sub-iconfont/master/Workfiles/_misc/SUB_Icon_Font_Splash_v1.png)
+
+---
 
 ## About
 
