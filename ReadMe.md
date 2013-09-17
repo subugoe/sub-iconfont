@@ -2,6 +2,8 @@
 
 Designed by Henrik Cederblad, [Cederblad Design](http://cederbladdesign.com).
 
+![alt tag](https://raw.github.com/subugoe/sub-iconfont/tree/master/Workfiles/_misc/SUB_Icon_Font_Splash_v1.png)
+
 ## About
 
 This is an icon font that contains UI symbols for various types of media and information sources. It was commissioned in 2013 by [SUB Göttingen](http://www.sub.uni-goettingen.de) | Georg-August-Universität
