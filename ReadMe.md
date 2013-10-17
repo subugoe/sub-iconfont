@@ -16,14 +16,14 @@ Niedersächsische Staats- und Universitätsbibliothek.
 A folder containing the actual icon font:
 
 - **eot**, **woff**, **svg**, **ttf** standard file formats
-- **Demo** showing an example display of the font on a web page
+- **Demo** showing an example webpage with the font in use
 
 **`Icons_and_Guidelines.pdf`**
 
-An overview of the icons along with information about the governing rules for designing and using the icon font:
+An overview of the icons along with information about the guidelines for designing and using the icon font:
 
-- **Icons overview**: all icons shown together on a grid
-- **Design Principles**: rules in effect during original design (should be followed whenever the set is extended with new icons)
+- **Icons overview**: showing all icons together on a grid
+- **Design Principles**: describing rules in effect during original design (should be followed if the set is to be extended with new icons)
 - **Usage Guidelines**: notes about proper display
 
 **`Character_Map.md`**
