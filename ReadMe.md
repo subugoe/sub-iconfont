@@ -15,8 +15,12 @@ Niedersächsische Staats- und Universitätsbibliothek.
 
 A folder containing the actual icon font:
 
-- **eot**, **woff**, **svg**, **ttf** standard file formats
+- **eot**, **woff2**, **woff**, **svg**, **ttf** standard file formats
 - **Demo** showing an example webpage with the font in use
+
+The **woff2** is the format every current browser will actually download; the older
+**eot**, **woff** and **svg** entries are retained only for legacy clients. See
+`tools/build-woff2.py` for how it is produced and verified.
 
 **`Icons_and_Guidelines.pdf`**
 

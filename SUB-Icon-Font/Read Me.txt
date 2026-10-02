@@ -1,3 +1,15 @@
 To modify your generated font, use the *dev.svg* file, located in the *fonts* folder in this package. You can import this dev.svg file to the IcoMoon app. All the tags (class names) and the Unicode points of your glyphs are saved in this file.
 
 See the documentation for more info on how to use this package: http://icomoon.io/#docs/font-face
+
+---
+
+Note on subicons.woff2: IcoMoon cannot generate WOFF2, so after regenerating this
+package with IcoMoon the woff2 file and its entry in the *src* list of style.css will
+be missing. Restore both by running, from the repository root:
+
+    python3 tools/build-woff2.py
+
+That script derives subicons.woff2 from subicons.ttf (a lossless container repack,
+never a re-export from the Illustrator masters), verifies that every glyph outline,
+codepoint and metric is unchanged, and confirms style.css references woff2 first.
