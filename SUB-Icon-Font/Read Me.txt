@@ -13,3 +13,14 @@ be missing. Restore both by running, from the repository root:
 That script derives subicons.woff2 from subicons.ttf (a lossless container repack,
 never a re-export from the Illustrator masters), verifies that every glyph outline,
 codepoint and metric is unchanged, and confirms style.css references woff2 first.
+
+---
+
+The svg/ folder holds one standalone SVG per glyph, named after its CSS class
+(e.g. subicon-book_bg.svg). IcoMoon does not produce these, so they are built
+separately from subicons.ttf:
+
+    python3 tools/build-svg.py
+
+Keep the files there in step with the font. If you regenerate the package with
+IcoMoon, re-run both scripts above.

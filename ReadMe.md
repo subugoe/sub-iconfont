@@ -16,11 +16,47 @@ Niedersächsische Staats- und Universitätsbibliothek.
 A folder containing the actual icon font:
 
 - **eot**, **woff2**, **woff**, **svg**, **ttf** standard file formats
+- **svg/** one standalone SVG per glyph (see *SVG files* below)
 - **Demo** showing an example webpage with the font in use
 
 The **woff2** is the format every current browser will actually download; the older
 **eot**, **woff** and **svg** entries are retained only for legacy clients. See
 `tools/build-woff2.py` for how it is produced and verified.
+
+### SVG files
+
+**`SUB-Icon-Font/svg/`** contains one SVG per glyph, named after its CSS class —
+`subicon-book_bg.svg`, `subicon-ui-loupe_fg.svg`, `subicon-ui-arrow-next-page.svg` —
+so a file name, a CSS class and a font glyph always refer to the same artwork.
+
+These are **per glyph, not per icon**. Because each icon is a background/foreground pair,
+you get one file per layer and stack them yourself, exactly as with the font. The most
+flexible option is to paste the paths inline, which lets CSS colour each layer:
+
+```html
+<svg width="32" height="32" viewBox="0 0 768 768" aria-hidden="true">
+  <path class="bg" fill="#6b4f2a" d="…"/><!-- subicon-book_bg.svg  -->
+  <path class="fg" fill="#fbf3e4" d="…"/><!-- subicon-book_fg.svg  -->
+</svg>
+```
+
+For a single layer you can reference the file directly:
+
+```html
+<img src="svg/subicon-newspaper_bg.svg" width="32" height="32" alt="">
+```
+
+Every file uses `viewBox="0 0 768 768"` (the font's em box) and `fill="currentColor"`, so a
+referenced file renders black and an inlined one inherits `color`. Referencing a layer from
+another document with `<use href="svg/…#id">` is technically possible, but browsers treat it as
+a cross-origin request — it will not work from `file://` and needs same-origin HTTP — so prefer
+inlining or `<img>`.
+
+Generated from `subicons.ttf` by `tools/build-svg.py`, which also verifies that every SVG still
+draws the same shape as the glyph it was derived from.
+
+These supersede the Illustrator exports in `Workfiles/_exports/` for distribution purposes; those
+remain in the repository as source history.
 
 **`Icons_and_Guidelines.pdf`**
 
